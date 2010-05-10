@@ -33,14 +33,6 @@ TODO:
 	Add a plugin to give easyer access to set the avatars and
 	enable / disable guess avatars.
 
-CHANGE LIST:
-	1.0
-		Inital Release
-	1.0.1
-		Rewrote code to fix some caching errors
-	1.0.2
-		fixed some more caching bugs
-
 ********************************************************************
 INSTALLATION:
 	1. Follow the following steps to make the changes to files.
