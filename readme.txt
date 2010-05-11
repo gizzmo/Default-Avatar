@@ -114,11 +114,11 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 	{
 		if ($user_avatar == '' && $pun_config['o_avatars'] == '1' && $pun_user['show_avatars'] != '0')
 		{
-			// was the default avatar previosly found
-			if (!isset($default_avatar))
+			// was the default memeber avatar previosly found
+			if (!isset($default_member_avatar))
 			{
 				// start with using the provided avatar
-				$default_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=1" width="64" height="64" alt="" />';
+				$default_member_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=1" width="64" height="64" alt="" />';
 
 				// then look for a uploaded avatar
 				foreach (array('jpeg','jpg', 'gif', 'png') as $cur_type)
@@ -127,17 +127,14 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 
 					if (file_exists(PUN_ROOT.$path) && $img_size = @getimagesize(PUN_ROOT.$path))
 					{
-						$default_avatar = '<img src="'.$pun_config['o_base_url'].'/'.$path.'" '.$img_size[3].' alt="" />';
+						$default_member_avatar = '<img src="'.$pun_config['o_base_url'].'/'.$path.'" '.$img_size[3].' alt="" />';
 						break;
 					}
 				}
 			}
 
-			// Set the $user_avatar with the default avatar
-			$user_avatar = $default_avatar;
-
-			// now we cache it so this doesnt happen again.
-			$user_avatar_cache[$cur_post['poster_id']] = $user_avatar;
+			// Set and cache $user_avatar with the default member avatar
+			$user_avatar = $user_avatar_cache[$cur_post['poster_id']] = $default_member_avatar;
 		}
 	}
 	else
@@ -148,13 +145,11 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 
 		if ($use_guest_avatar && $pun_config['o_avatars'] == '1' && $pun_user['show_avatars'] != '0')
 		{
-			// is the guest avatar already cached?
-			if (isset($user_avatar_cache[$cur_post['poster_id']]))
-				$user_avatar = $user_avatar_cache[$cur_post['poster_id']];
-			else
+			// was the guest avatar previosly found
+			if (!isset($default_guest_avatar))
 			{
 				// start with using the provided avatar
-				$user_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=2" width="64" height="64" alt="" />';
+				$default_guest_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=2" width="64" height="64" alt="" />';
 
 				// then look for a uploaded avatar
 				foreach (array('jpeg','jpg', 'gif', 'png') as $cur_type)
@@ -163,14 +158,14 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 
 					if (file_exists(PUN_ROOT.$path) && $img_size = @getimagesize(PUN_ROOT.$path))
 					{
-						$user_avatar = '<img src="'.$pun_config['o_base_url'].'/'.$path.'" '.$img_size[3].' alt="" />';
+						$default_guest_avatar = '<img src="'.$pun_config['o_base_url'].'/'.$path.'" '.$img_size[3].' alt="" />';
 						break;
 					}
 				}
-
-				// now we cache it so this doesnt happen again.
-				$user_avatar_cache[$cur_post['poster_id']] = $user_avatar;
 			}
+
+			// Set $user_avatar with the default guest avatar
+			$user_avatar = $default_guest_avatar;
 		}
 	}
 	// Default Avatar by Gizzmo - END
