@@ -17,21 +17,21 @@ DESCRIPTION:
 	This modification adds a avatar to guests and users who do not
 	currently have a avatar uploaded.
 
-NOTES:
-	To use your own image as the default avatar upload the image to
-	the avatar directory with either the name 'member.png' or
-	'guest.png'. (extension must be 'jpg', 'gif', or 'png')
-
-	The default avatars provided with this mod are store in a
-	encode state (base64) in misc.php
-
 AFFECTED FILES:
 	misc.php
 	viewtopic.php
 
+NOTES:
+	- To use your own image as the default avatar upload the image to
+	  the avatar directory with either the name 'member.png' or
+	  'guest.png'. (extension must be 'jpg', 'gif', or 'png')
+
+	- The default avatars provided with this mod are store in a
+	  encode state (base64) in misc.php
+
 TODO:
-	Add a plugin to give easyer access to set the avatars and
-	enable / disable guess avatars.
+	- Add a plugin to give easyer access to set the avatars and
+	  enable / disable guess avatars.
 
 ********************************************************************
 INSTALLATION:
