@@ -20,7 +20,7 @@ DESCRIPTION:
 NOTES:
 	To use your own image as the default avatar upload the image to
 	the avatar directory with either the name 'member.png' or
-	'guest.png'. (extension must be 'jpeg','jpg', 'gif', or 'png')
+	'guest.png'. (extension must be 'jpg', 'gif', or 'png')
 
 	The default avatars provided with this mod are store in a
 	encode state (base64) in misc.php
@@ -121,7 +121,7 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 				$default_member_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=1" width="64" height="64" alt="" />';
 
 				// then look for a uploaded avatar
-				foreach (array('jpeg','jpg', 'gif', 'png') as $cur_type)
+				foreach (array('jpg', 'gif', 'png') as $cur_type)
 				{
 					$path = $pun_config['o_avatars_dir'].'/member.'.$cur_type;
 
@@ -152,7 +152,7 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 				$default_guest_avatar = '<img src="'.$pun_config['o_base_url'].'/misc.php?gizz_default_avatar_img=2" width="64" height="64" alt="" />';
 
 				// then look for a uploaded avatar
-				foreach (array('jpeg','jpg', 'gif', 'png') as $cur_type)
+				foreach (array('jpg', 'gif', 'png') as $cur_type)
 				{
 					$path = $pun_config['o_avatars_dir'].'/guest.'.$cur_type;
 
