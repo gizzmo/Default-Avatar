@@ -29,13 +29,21 @@ NOTES:
 	- The default avatars provided with this mod are store in a
 	  encode state (base64) in misc.php
 
+	- You do not need to use the plugin to use this mod. The plugin is
+	  purely optional.
+
 TODO:
 	- Add a plugin to give easyer access to set the avatars and
 	  enable / disable guess avatars.
 
 ********************************************************************
 INSTALLATION:
-	1. Follow the following steps to make the changes to files.
+
+	1. Upload the following files to the root directory of your forum.
+		lang/		(folder)
+		plugins/	(folder)
+
+	2. Follow the following steps to make the changes to files.
 
 ********************************************************************
 #-------[ 1. Open ]
