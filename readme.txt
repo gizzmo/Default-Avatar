@@ -36,6 +36,8 @@ NOTES:
 INSTALLATION:
 
 	1. Upload the following files to the root directory of your forum.
+	   This step of purely optional. Only do it if you wish to use the
+	   plugin.
 		lang/		(folder)
 		plugins/	(folder)
 
