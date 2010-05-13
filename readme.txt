@@ -3,8 +3,8 @@
 ********************************************************************
 Name:          Default Avatar
 Author:        Gizzmo <justgiz@gmail.com>
-Version:       1.0.2
-Release date:  May 1st 2010
+Version:       1.1.0
+Release date:  May 13th 2010
 Works on:      1.4-rc3
 ********************************************************************
 DISCLAIMER:
