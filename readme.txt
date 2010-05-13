@@ -32,10 +32,6 @@ NOTES:
 	- You do not need to use the plugin to use this mod. The plugin is
 	  purely optional.
 
-TODO:
-	- Add a plugin to give easyer access to set the avatars and
-	  enable / disable guess avatars.
-
 ********************************************************************
 INSTALLATION:
 
