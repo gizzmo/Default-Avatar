@@ -3,9 +3,9 @@
 ********************************************************************
 Name:          Default Avatar
 Author:        Gizzmo <justgiz@gmail.com>
-Version:       1.1.0
-Release date:  May 13th 2010
-Works on:      1.4-rc3
+Version:       1.1.1
+Release date:  June 19th 2010
+Works on:      1.4.0
 ********************************************************************
 DISCLAIMER:
 	Please note that "mods" are not officially supported by FluxBB.
