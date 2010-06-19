@@ -50,7 +50,7 @@ INSTALLATION:
 
 
 ********************************************************************
-#-------[ 2. Find (line:328) ]
+#-------[ 2. Find (line:331) ]
 
 else
 	message($lang_common['Bad request']);
@@ -60,7 +60,7 @@ else
 #-------[ 3. Before, Add ]
 
 // Default Avatar by Gizzmo - Start
-else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default_avatar_img'], array(1,2)))
+else if (isset($_GET['gizz_default_avatar_img']))
 {
 	$avatar = intval($_GET['gizz_default_avatar_img']);
 	$avatars = array(
@@ -90,9 +90,13 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 		)
 	);
 
-	header("Content-type: image/".$avatars[$avatar]['type']);
-	header("Content-length: ".$avatars[$avatar]['size']);
-	exit(base64_decode($avatars[$avatar]['code']));
+	// make sure a non defined images isnt tried to display
+	if (array_key_exists($avatar, $avatars))
+	{
+		header("Content-type: image/".$avatars[$avatar]['type']);
+		header("Content-length: ".$avatars[$avatar]['size']);
+		exit(base64_decode($avatars[$avatar]['code']));
+	}
 }
 // Default Avatar by Gizzmo - END
 
@@ -104,7 +108,7 @@ else if (isset($_GET['gizz_default_avatar_img']) && in_array($_GET['gizz_default
 
 
 ********************************************************************
-#-------[ 5. Find (line:319) ]
+#-------[ 5. Find (line:328) ]
 
 			$signature = parse_signature($cur_post['signature']);
 			$signature_cache[$cur_post['poster_id']] = $signature;
