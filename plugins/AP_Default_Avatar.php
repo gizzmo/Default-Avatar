@@ -93,7 +93,7 @@ else
 
 ?>
 	<div id="exampleplugin" class="blockform">
-		<h2><span>Devault Avatars</span></h2>
+		<h2><span><?php echo $lang_plugin['Default avatars']?></span></h2>
 		<div class="box">
 			<form method="post" enctype="multipart/form-data" action="<?php echo pun_htmlspecialchars($plugin_url) ?>">
 				<div><input type="hidden" name="form_sent" value="1" /></div>

@@ -8,6 +8,7 @@
 $lang_plugin = array(
 	'Guest avatars disabled redirect'	=> 'Guest avatars disabled. Redirecting …',
 	'Guest avatars enabled redirect'	=> 'Guest avatars enabled. Redirecting …',
+	'Default avatars'					=> 'Default avatars',
 	'Default member avatars'			=> 'Default member avatars',
 	'Default member avatars info'		=> 'Select the image you wish to use for users who do not have a avatar uploaded.',
 	'Default guest avatars'				=> 'Default guest avatars',
