@@ -50,7 +50,7 @@ INSTALLATION:
 
 
 ********************************************************************
-#-------[ 2. Find (line:331) ]
+#-------[ 2. Find (line:333) ]
 
 else
 	message($lang_common['Bad request']);
@@ -108,7 +108,7 @@ else if (isset($_GET['gizz_default_avatar_img']))
 
 
 ********************************************************************
-#-------[ 5. Find (line:328) ]
+#-------[ 5. Find (line:333) ]
 
 			$signature = parse_signature($cur_post['signature']);
 			$signature_cache[$cur_post['poster_id']] = $signature;
