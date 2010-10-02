@@ -5,7 +5,7 @@ Name:          Default Avatar
 Author:        Gizzmo <justgiz@gmail.com>
 Version:       1.1.2
 Release date:  June 19th 2010
-Works on:      1.4.0
+Works on:      1.4.0, 1.4.1, 1.4.2
 ********************************************************************
 DISCLAIMER:
 	Please note that "mods" are not officially supported by FluxBB.
