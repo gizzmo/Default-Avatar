@@ -3,7 +3,7 @@
 ********************************************************************
 Name:          Default Avatar
 Author:        Gizzmo <justgiz@gmail.com>
-Version:       1.1.1
+Version:       1.1.2
 Release date:  June 19th 2010
 Works on:      1.4.0
 ********************************************************************
