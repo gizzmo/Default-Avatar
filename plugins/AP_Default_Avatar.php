@@ -104,7 +104,7 @@ else
 							<table class="aligntop" cellspacing="0">
 								<tbody>
 									<tr>
-										<th scope="row"><?php if (isset($custom_member)) echo '<span><a href="'.$plugin_url.'&amp;delete_avatar=member">Delete avatar</a></span>'; echo $member_avatar; ?></th>
+										<th scope="row"><?php if (isset($custom_member)) echo '<span><a href="'.$plugin_url.'&amp;delete_avatar=member">'.$lang_plugin['Delete this avatar'].'</a></span>'; echo $member_avatar; ?></th>
 										<td>
 											<input name="req_member_file" type="file" size="40" /><input type="submit" name="upload_member" value="<?php echo $lang_profile['Upload'] ?>">
 											<span><?php echo $lang_plugin['Default member avatars info']?></span>
@@ -121,7 +121,7 @@ else
 							<table class="aligntop" cellspacing="0">
 								<tbody>
 									<tr>
-										<th scope="row"><?php if (isset($custom_guest)) echo '<span><a href="'.$plugin_url.'&amp;delete_avatar=guest">Delete avatar</a></span>';  echo $guest_avatar; ?></th>
+										<th scope="row"><?php if (isset($custom_guest)) echo '<span><a href="'.$plugin_url.'&amp;delete_avatar=guest">'.$lang_plugin['Delete this avatar'].'</a></span>';  echo $guest_avatar; ?></th>
 										<td>
 											<input name="req_guest_file" type="file" size="40" /><input type="submit" name="upload_guest" value="<?php echo $lang_profile['Upload'] ?>">
 											<span><?php echo $lang_plugin['Default guest avatars info']?></span>

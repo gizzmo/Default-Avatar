@@ -15,5 +15,6 @@ $lang_plugin = array(
 	'Default guest avatars info'		=> 'Select the image you wish to use for guests.',
 	'Disable'							=> 'Disable',
 	'Enable'							=> 'Enable',
-	'Default avatar help'				=> 'The images you choose are still required to follow the options set for avatars. Height, width and size.'
+	'Default avatar help'				=> 'The images you choose are still required to follow the options set for avatars. Height, width and size.',
+	'Delete this avatar'				=> 'Delete this avatar',
 );
